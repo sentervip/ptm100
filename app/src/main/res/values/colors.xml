@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_white_100">#FFFFFF</color>
+    <color name="color_ble_btn">#00c8af</color>
+    <color name="color_bottom_tx_normal">#666</color>
+    <color name="color_bottom_tx_select">#00c9af</color>
+    <color name="color_bottom_line">#dddddd</color>
+    <color name="color_temp_tx">#FFF</color>
+    <color name="color_cur_temp_tx">#FF776D</color>
+    <color name="color_layout_background">#f6f6f6</color>
+    <color name="color_split_line">#dddddd</color>
+    <color name="color_title_tx">#333</color>
+    <color name="color_title_baby">#666</color>
+    <color name="color_content_baby">#2a2a2a</color>
+    <color name="color_baby_tip">#999</color>
+    <color name="color_setting_item_press">#f2f2f2</color>
+    <color name="blue_shallow">#1E90FF</color>
+    <color name="color_normal_temp">#00c9af</color>
+    <color name="color_warn_temp">#ff8859</color>
+    <color name="color_warn_low_temp">#629afe</color>
+    <color name="color_warn_item">#5e5e5e</color>
+    <color name="color_item_press">#f6f6f6</color>
+
+    <color name="black_20">#33000000</color>
+    <color name="black_50">#45000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_70">#b2000000</color>
+    <color name="black_80">#cc000000</color>
+</resources>

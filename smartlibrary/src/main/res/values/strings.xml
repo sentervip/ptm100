@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SmartLibrary</string>
+    <string name="storage_permissions_remind">若没有此权限，应用将无法正常使用</string>
+</resources>

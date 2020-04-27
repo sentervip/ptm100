@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/head_dialog_width"
+    android:layout_height="@dimen/head_dialog_height"
+    android:layout_gravity="center_horizontal|bottom"
+    android:layout_marginBottom="30dp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/dialog_shape_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/camera_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/camera"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/split_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/camera_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/color_baby_tip" />
+
+        <TextView
+            android:id="@+id/fold_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/split_line"
+            android:gravity="center"
+            android:text="@string/fold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dialog_shape_layout"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/color_ble_btn"
+        android:textSize="18sp" />
+</RelativeLayout>

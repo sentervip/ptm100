@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sound_array">
+        <item>@string/sound_default</item>
+        <item>@string/sound_light</item>
+        <item>@string/sound_strong</item>
+    </string-array>
+
+    <string-array name="check_array">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+    </string-array>
+
+    <string-array name="unit_array">
+        <item>@string/centigrade</item>
+        <item>@string/fahrenheit</item>
+    </string-array>
+
+    <string-array name="sex_array">
+        <item>@string/boy</item>
+        <item>@string/girl</item>
+    </string-array>
+
+    <string-array name="num_array">
+        <item>@string/num_0</item>
+        <item>@string/num_1</item>
+        <item>@string/num_2</item>
+        <item>@string/num_3</item>
+        <item>@string/num_4</item>
+        <item>@string/num_5</item>
+        <item>@string/num_6</item>
+        <item>@string/num_7</item>
+        <item>@string/num_8</item>
+        <item>@string/num_9</item>
+    </string-array>
+
+    <string-array name="temp_array">
+        <item>@string/temp_25</item>
+        <item>@string/temp_26</item>
+        <item>@string/temp_27</item>
+        <item>@string/temp_28</item>
+        <item>@string/temp_29</item>
+        <item>@string/temp_30</item>
+        <item>@string/temp_31</item>
+        <item>@string/temp_32</item>
+        <item>@string/temp_33</item>
+        <item>@string/temp_34</item>
+        <item>@string/temp_35</item>
+        <item>@string/temp_36</item>
+        <item>@string/temp_37</item>
+        <item>@string/temp_38</item>
+        <item>@string/temp_39</item>
+        <item>@string/temp_40</item>
+    </string-array>
+
+    <string-array name="temperature_array">
+        <item>@string/higher_warn_value</item>
+        <item>@string/lower_warn_value</item>
+    </string-array>
+
+    <string-array name="min_array">
+        <item>@string/two_second</item>
+        <item>@string/two_min</item>
+        <item>@string/five_min</item>
+        <item>@string/fifteen_min</item>
+        <item>@string/thirty_min</item>
+    </string-array>
+</resources>

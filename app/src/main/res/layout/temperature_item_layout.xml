@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36.66dp"
+    android:background="@drawable/setting_item_selector"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/baby_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white_100">
+
+        <ImageView
+            android:id="@+id/warn_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.66dp"
+            android:layout_marginRight="10.66dp"
+            android:clickable="false"
+            android:src="@drawable/higher_warn_icon" />
+
+        <TextView
+            android:id="@+id/warn_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/warn_icon"
+            android:gravity="center"
+            android:textColor="@color/color_title_tx"
+            android:textSize="11.33sp" />
+
+
+        <TextView
+            android:id="@+id/warn_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/goto_icon"
+            android:gravity="center"
+            android:textColor="@color/color_title_tx"
+            android:textSize="11.33sp" />
+
+        <ImageView
+            android:id="@+id/goto_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.66dp"
+            android:src="@drawable/set_goto_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

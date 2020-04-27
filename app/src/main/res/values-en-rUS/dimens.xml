@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="head_dialog_width">314dp</dimen>
+    <dimen name="head_dialog_height">170dp</dimen>
+    <dimen name="lead_dialog_height">260dp</dimen>
+    <dimen name="option_dialog_height">260dp</dimen>
+    <dimen name="picker_dialog_height">220dp</dimen>
+    <dimen name="ble_item_height">50dp</dimen>
+    <dimen name="temperature_value_height">275.66dp</dimen>
+
+    <dimen name="pickerIndicatorSize">2dp</dimen>
+    <dimen name="pickerItemSpace">24dp</dimen>
+    <dimen name="pickerItemTextSize">14sp</dimen>
+    <dimen name="pickerMargins">8dp</dimen>
+    <dimen name="temperature_c_size">20.0sp</dimen>
+    <dimen name="temperature_f_size">12sp</dimen>
+</resources>

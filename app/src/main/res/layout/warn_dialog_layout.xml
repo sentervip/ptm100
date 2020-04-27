@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/split_line"
+        android:background="@color/color_white_100"
+        android:gravity="center"
+        android:text="@string/warn_higher_tip"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/split_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_above="@+id/picker_layout"
+        android:src="@color/color_baby_tip" />
+
+    <LinearLayout
+        android:id="@+id/picker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/cancel_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/color_white_100"
+        android:orientation="horizontal">
+
+
+        <com.itheima.wheelpicker.WheelPicker
+            android:id="@+id/parent_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            app:wheel_item_align="center"
+            app:wheel_item_space="@dimen/pickerItemSpace"
+            app:wheel_selected_item_position="3"
+            app:wheel_item_text_size="20sp"
+            app:wheel_same_width="true"
+            app:wheel_selected_item_text_color="@color/color_normal_temp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:src="@drawable/point_icon" />
+
+        <com.itheima.wheelpicker.WheelPicker
+            android:id="@+id/num_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            app:wheel_item_align="center"
+            app:wheel_item_space="@dimen/pickerItemSpace"
+            app:wheel_item_text_size="22sp"
+            app:wheel_same_width="true"
+            app:wheel_selected_item_position="4"
+            app:wheel_selected_item_text_color="@color/color_normal_temp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/done_btn"
+        android:layout_marginBottom="10dp"
+        android:background="@color/color_white_100"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/color_baby_tip"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:background="@color/color_white_100"
+        android:gravity="center"
+        android:text="@string/done_submit"
+        android:textColor="@color/color_ble_btn"
+        android:textSize="18sp" />
+
+</RelativeLayout>

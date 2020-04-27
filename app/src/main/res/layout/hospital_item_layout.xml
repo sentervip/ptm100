@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46.66dp"
+    android:background="@drawable/setting_item_selector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.66dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/goto_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hospital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="龙华人民医院"
+            android:textColor="@color/color_title_tx"
+            android:textSize="11.33sp" />
+
+        <TextView
+            android:id="@+id/hospital_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="3dp"
+            android:text="深圳龙华新区清湖地铁站A出口"
+            android:textColor="@color/color_title_baby"
+            android:textSize="8.33sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/goto_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.66dp"
+        android:src="@drawable/set_goto_icon" />
+</RelativeLayout>

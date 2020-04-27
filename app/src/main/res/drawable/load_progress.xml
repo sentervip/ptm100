@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="360">
+    <shape
+        android:shape="ring"
+        android:useLevel="false">
+        <gradient
+            android:centerColor="@color/color_ble_btn"
+            android:endColor="@color/color_bottom_tx_select"
+            android:startColor="@color/color_white_100" />
+    </shape>
+</rotate>

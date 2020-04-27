@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_normal_temp">
+
+    <TextView
+        android:id="@+id/cur_baby_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/color_white_100"
+        android:textSize="15sp" />
+
+    <com.jxcy.smartsensor.utils.BatteryView
+        android:id="@+id/battery_v"
+        android:layout_width="26dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="8dp"
+        app:head_height="6dp"
+        app:head_width="3dp"
+        app:height="10dp"
+        app:width="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/temperature_value_height"
+        android:layout_below="@+id/cur_baby_name"
+        android:layout_centerInParent="true"
+        android:background="@drawable/star_icon_bg"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/temp_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/home_star_bg">
+
+            <TextView
+                android:id="@+id/cur_temp_v"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="_ _._ _"
+                android:textColor="@color/color_temp_tx"
+                android:textSize="37sp" />
+
+            <TextView
+                android:id="@+id/unit_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cur_temp_v"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/cur_temp_v"
+                android:text="℃"
+                android:textColor="@color/color_temp_tx"
+                android:textSize="13.3sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/cut_stauts_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7.66dp"
+            android:layout_marginBottom="6.66dp"
+            android:text="@string/ble_connecting"
+            android:textColor="@color/color_white_100"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/arrow_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cut_stauts_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7.66dp"
+            android:layout_marginBottom="6.66dp"
+            android:src="@drawable/arrow_down_btn_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ploy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:background="@color/color_white_100">
+
+        <RelativeLayout
+            android:id="@+id/param_layout"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/max_temp_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.66dp"
+                android:text="@string/temp_cur_value"
+                android:textColor="@color/color_cur_temp_tx"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <com.jxcy.smartsensor.view.unit.TemperatureLineView
+            android:id="@+id/chart_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/param_layout"
+            android:layout_margin="15dp"
+            app:bgcolor="#ffffff"
+            app:interval="1dp"
+            app:isScroll="false"
+            app:linecolor="#02bbb7"
+            app:viewType="1"
+            app:xylinecolor="#e2e2e2"
+            app:xylinewidth="1dp"
+            app:xytextcolor="#666"
+            app:xytextsize="8sp" />
+    </RelativeLayout>
+</RelativeLayout>

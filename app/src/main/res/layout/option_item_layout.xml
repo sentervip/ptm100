@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/setting_item_selector">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/drawee_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16.6dp"
+        android:layout_marginRight="16.6dp"
+        android:src="@drawable/boy_icon"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:failureImage="@drawable/boy_icon"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImage="@drawable/boy_icon"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:retryImage="@drawable/boy_icon"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundAsCircle="false"
+        fresco:roundedCornerRadius="14dp"
+        fresco:roundingBorderWidth="1dp" />
+
+    <TextView
+        android:id="@+id/baby_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/drawee_view"
+        android:gravity="center"
+        android:text="json"
+        android:textColor="@drawable/option_tx_selector"
+        android:textSize="12.33sp" />
+
+    <RadioButton
+        android:id="@+id/baby_radio_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.66dp"
+        android:background="@drawable/radio_btn_selector"
+        android:button="@null"
+        android:checked="false"
+        android:clickable="false"
+        android:textColor="@color/color_title_tx"
+        android:textSize="11.33sp" />
+</RelativeLayout>

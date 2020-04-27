@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jxcy.smartsensor.view.unit.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="46.66dp">
+
+
+    <RelativeLayout
+        android:id="@+id/view_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setting_item_selector"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/baby_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46.66dp"
+            android:background="@color/color_white_100">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/head_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.66dp"
+                android:layout_marginRight="10.66dp"
+                android:src="@drawable/boy_icon"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:failureImage="@drawable/boy_icon"
+                fresco:failureImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/boy_icon"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:retryImage="@drawable/boy_icon"
+                fresco:retryImageScaleType="centerCrop"
+                fresco:roundAsCircle="false"
+                fresco:roundedCornerRadius="15dp"
+                fresco:roundingBorderWidth="1dp" />
+
+            <TextView
+                android:id="@+id/child_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/head_icon"
+                android:text="@string/child_temp_name"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp" />
+
+            <ImageView
+                android:id="@+id/split_line"
+                android:layout_width="0.8dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/child_name"
+                android:background="@color/color_title_tx" />
+
+            <TextView
+                android:id="@+id/age_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/split_line"
+                android:text="@string/child_year_age"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.66dp"
+                android:src="@drawable/set_goto_icon" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/del_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/del_item"
+            android:textColor="@color/color_title_tx"
+            android:textSize="11.33sp" />
+    </LinearLayout>
+</com.jxcy.smartsensor.view.unit.SwipeItemLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_item_selector">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46.66dp">
+
+        <ImageView
+            android:id="@+id/tem_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.66dp"
+            android:clickable="false"
+            android:src="@drawable/normal_temp_icon" />
+
+
+        <TextView
+            android:id="@+id/max_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/goto_icon"
+            android:layout_toRightOf="@+id/tem_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/temp_cur_value"
+            android:textColor="@color/color_title_tx"
+            android:textSize="11.33sp" />
+
+
+        <ImageView
+            android:id="@+id/goto_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.66dp"
+            android:src="@drawable/set_goto_icon" />
+    </RelativeLayout>
+
+
+    <ViewStub
+        android:id="@+id/detail_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:layout="@layout/detail_viewstub_layout" />
+</RelativeLayout>

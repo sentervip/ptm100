@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/option_dialog_height"
+    android:layout_gravity="center_horizontal|bottom"
+    android:layout_marginBottom="55dp"
+    android:background="@drawable/dialog_shape_layout">
+
+    <TextView
+        android:id="@+id/option_v"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/option_baby"
+        android:textColor="@color/color_ble_btn"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/split_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/option_v"
+        android:background="@color/color_split_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/split_line"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

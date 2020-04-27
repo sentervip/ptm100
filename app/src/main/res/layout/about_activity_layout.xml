@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_layout_background">
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/about_us"
+        android:textColor="@color/color_title_tx"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/split_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/about_title"
+        android:background="@color/color_split_line" />
+
+    <RelativeLayout
+        android:id="@+id/about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="133.33dp"
+        android:layout_below="@+id/split_line">
+
+        <ImageView
+            android:id="@+id/about_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/about_icon" />
+
+        <TextView android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/color_title_tx"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_name"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_version"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/color_title_tx"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/privacy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36.66dp"
+        android:layout_below="@+id/about_layout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/setting_item_selector">
+
+        <TextView
+            android:id="@+id/privacy_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.66dp"
+            android:gravity="center"
+            android:text="@string/privacy"
+            android:textColor="@color/color_title_tx"
+            android:textSize="11.33sp" />
+
+
+        <ImageView
+            android:id="@+id/privacy_goto_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.66dp"
+            android:src="@drawable/set_goto_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/protocols_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36.66dp"
+        android:layout_below="@+id/privacy_layout"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/setting_item_selector">
+
+        <TextView
+            android:id="@+id/protocols_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.66dp"
+            android:gravity="center"
+            android:text="@string/safe_protocols"
+            android:textColor="@color/color_title_tx"
+            android:textSize="11.33sp" />
+
+
+        <ImageView
+            android:id="@+id/protocols_goto_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.66dp"
+            android:src="@drawable/set_goto_icon" />
+    </RelativeLayout>
+</RelativeLayout>

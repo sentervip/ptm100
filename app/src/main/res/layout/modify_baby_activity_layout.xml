@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_layout_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/modify_baby_title"
+            android:textColor="@color/color_title_tx"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_split_line" />
+
+        <RelativeLayout
+            android:id="@+id/baby_layout"
+            android:layout_width="match_parent"
+            android:layout_height="66.66dp"
+            android:background="@color/color_white_100">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/drawee_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.66dp"
+                android:layout_toLeftOf="@+id/head_icon_goto"
+                android:src="@drawable/boy_icon"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:failureImage="@drawable/boy_icon"
+                fresco:failureImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/boy_icon"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:retryImage="@drawable/boy_icon"
+                fresco:retryImageScaleType="centerCrop"
+                fresco:roundAsCircle="false"
+                fresco:roundedCornerRadius="25dp"
+                fresco:roundingBorderWidth="1dp" />
+
+            <TextView
+                android:id="@+id/child_name"
+                android:layout_width="50.33dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.66dp"
+                android:gravity="center"
+                android:text="@string/head_title"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp" />
+
+            <ImageView
+                android:id="@+id/head_icon_goto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.66dp"
+                android:src="@drawable/set_goto_icon" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/nick_layout"
+            android:layout_width="match_parent"
+            android:layout_height="36.66dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_white_100">
+
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="50.33dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.66dp"
+                android:gravity="center"
+                android:text="@string/nick_name"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp" />
+
+            <EditText
+                android:id="@+id/nick_v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@+id/nick_goto_v"
+                android:layout_toRightOf="@+id/nick_name"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/nick_goto_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.66dp"
+                android:src="@drawable/set_goto_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sex_layout"
+            android:layout_width="match_parent"
+            android:layout_height="36.66dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_white_100">
+
+
+            <TextView
+                android:id="@+id/sex_name"
+                android:layout_width="50.33dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.66dp"
+                android:gravity="center"
+                android:text="@string/baby_sex"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp" />
+
+
+            <TextView
+                android:id="@+id/sex_v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@+id/sex_goto_v"
+                android:layout_toRightOf="@+id/sex_name"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/sex_goto_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.66dp"
+                android:src="@drawable/set_goto_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/age_layout"
+            android:layout_width="match_parent"
+            android:layout_height="36.66dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_white_100">
+
+            <TextView
+                android:id="@+id/age_name"
+                android:layout_width="50.33dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.66dp"
+                android:layout_toRightOf="@+id/warn_icon"
+                android:gravity="center"
+                android:text="@string/baby_age"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp" />
+
+            <TextView
+                android:id="@+id/age_v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@+id/age_goto_v"
+                android:layout_toRightOf="@+id/age_name"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/age_goto_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.66dp"
+                android:src="@drawable/set_goto_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/enable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="36.66dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/color_white_100">
+
+            <TextView
+                android:id="@+id/enable_name"
+                android:layout_width="106.66dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.66dp"
+                android:layout_toRightOf="@+id/unit_icon"
+                android:gravity="center"
+                android:text="@string/baby_enable"
+                android:textColor="@color/color_title_tx"
+                android:textSize="11.33sp" />
+
+            <Switch
+                android:id="@+id/enable_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/enable_to_v"
+                android:textColor="@color/color_title_tx"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track"
+                android:textSize="11.33sp" />
+
+
+            <ImageView
+                android:id="@+id/enable_to_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.66dp"
+                android:src="@drawable/set_goto_icon" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/modify_btn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_tip"
+        android:textColor="@color/color_baby_tip"
+        android:layout_marginBottom="11dp"
+        android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/modify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10.66dp"
+        android:layout_marginRight="10.66dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ble_btn_shape"
+        android:text="@string/baby_save"
+        android:textColor="@color/color_white_100"
+        android:textSize="11.3sp" />
+</RelativeLayout>

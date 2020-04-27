@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/head_dialog_width"
+    android:layout_height="@dimen/lead_dialog_height"
+    android:layout_gravity="center_horizontal|bottom"
+    android:background="@android:color/transparent"
+    android:layout_marginBottom="55dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/dialog_shape_layout"
+        android:orientation="vertical"
+        android:layout_above="@+id/cancel_btn"
+        android:layout_marginBottom="28dp">
+
+        <TextView
+            android:id="@+id/baidu_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/baidu"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/split_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/camera_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/color_baby_tip" />
+
+        <TextView
+            android:id="@+id/gaode_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/split_line"
+            android:gravity="center"
+            android:text="@string/gaode"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/split_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/camera_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/color_baby_tip" />
+
+        <TextView
+            android:id="@+id/tencent_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/split_line"
+            android:gravity="center"
+            android:text="@string/tencent"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/dialog_shape_layout"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/color_ble_btn"
+        android:textSize="18sp"
+        />
+</RelativeLayout>

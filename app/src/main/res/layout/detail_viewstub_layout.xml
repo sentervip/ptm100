@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <com.jxcy.smartsensor.view.unit.TemperatureLineView
+        android:id="@+id/temperature_v"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="20dp"
+        app:bgcolor="#ffffff"
+        app:interval="2dp"
+        app:viewType="3"
+        app:isHistory="true"
+        app:isScroll="true"
+        app:linecolor="#02bbb7"
+        app:xylinecolor="#e2e2e2"
+        app:xylinewidth="1dp"
+        app:xytextcolor="#666"
+        app:xytextsize="8sp" />
+</RelativeLayout>
