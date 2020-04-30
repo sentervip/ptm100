@@ -81,8 +81,8 @@
     <string name="fahrenheit">华摄氏度</string>
 
     <!--高低设置-->
-    <string name="warn_higher_tip">宝宝高于此温度会提现你</string>
-    <string name="warn_lower_tip">宝宝低于此温度会提现你</string>
+    <string name="warn_higher_tip">宝宝高于此温度会提醒你</string>
+    <string name="warn_lower_tip">宝宝低于此温度会提醒你</string>
     <string name="higher_warn_value">高温报警值</string>
     <string name="lower_warn_value">低温报警值</string>
     <string name="num_0">0</string>

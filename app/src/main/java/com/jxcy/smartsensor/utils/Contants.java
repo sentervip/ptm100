@@ -57,11 +57,11 @@ public class Contants {
     public static String LOWER_WARN_SOUND = "lower_warn_sound";
 
     public static float higher_warn_value = 38.0f;
-    public static float lower_warn_value = 35.5f;
+    public static float lower_warn_value = 34.0f;
     public static float adjust_temperature = 0.0f;
 
     public static final float maxValue = 40.0f;
-    public static final float minValue = 35.0f;
+    public static final float minValue = 34.0f;
 
     public static final int sound_strong = 1;
     public static final int sound_normal = 2;
